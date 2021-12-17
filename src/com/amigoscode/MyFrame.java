@@ -34,12 +34,12 @@ public class MyFrame extends JFrame implements ActionListener {
     MyFrame() {
 
 //adding some images
-        catIcon = new ImageIcon("C:\\Users\\intel\\OneDrive\\Рабочий стол\\IT\\v989187-1844716273.jpg");
-        cat1Icon = new ImageIcon("C:\\Users\\intel\\OneDrive\\Рабочий стол\\IT\\1gzp5Wdn6Yblu3CJaTPfPimrqfPLxBSqOR7HunfJFAnJ1wwMFOsXpFKMVBsB0lPcjChOseIi.jpg");
-        dogIcon = new ImageIcon("C:\\Users\\intel\\OneDrive\\Рабочий стол\\IT\\ad6a73639b2904c013e2efdd3472e828_100_100.jpg");
-        dog1Icon = new ImageIcon("C:\\Users\\intel\\OneDrive\\Рабочий стол\\IT\\2yR20quaDVCBP88wPlFTZWlnoTtRS9f-UKKQLZDLtL3KeXHp45jt7f-ZWwO91vrToGt-7Nzn.jpg");
-        wolfIcon = new ImageIcon("C:\\Users\\intel\\OneDrive\\Рабочий стол\\IT\\-eLX4QFvw5yAqxYx4BBLlT5ZbAIW0eB87wf1CjHbTukOA8qeJ7Wn2J2P22FCd4OEIQMkA7Gb.jpg");
-        wolf1Icon = new ImageIcon("C:\\Users\\intel\\OneDrive\\Рабочий стол\\IT\\picture-1933-1590333732.jpg");
+        catIcon = new ImageIcon("cat.jpg");
+        cat1Icon = new ImageIcon("cat1.jpg");
+        dogIcon = new ImageIcon("dog.jpg");
+        dog1Icon = new ImageIcon("dog1.jpg");
+        wolfIcon = new ImageIcon("wolf.jpg");
+        wolf1Icon = new ImageIcon("wolf1.jpg");
 
 //creating labels
         catLabel = new JLabel();
@@ -110,7 +110,7 @@ public class MyFrame extends JFrame implements ActionListener {
         this.setTitle("Captcha"); //sets title of a this
         this.setDefaultCloseOperation(this.EXIT_ON_CLOSE); //exit out of app
 
-        ImageIcon image = new ImageIcon("C:\\Users\\intel\\OneDrive\\Рабочий стол\\unnamed.jpg");
+        ImageIcon image = new ImageIcon("tmci.jpg");
         this.setIconImage(image.getImage());//adding image
         this.getContentPane().setBackground(new Color(255, 250, 250));
 
@@ -156,7 +156,7 @@ public class MyFrame extends JFrame implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         if (e.getSource()==button){
 
-            if (catBox.isSelected() && cat1Box.isSelected() && !dog1Box.isSelected() &&!dogBox.isSelected()&&!wolf1Box.isSelected() && !wolf1Box.isSelected()){
+            if (catBox.isSelected() && cat1Box.isSelected() && !dog1Box.isSelected() &&!dogBox.isSelected()&&!wolfBox.isSelected() && !wolf1Box.isSelected()){
                 String answr = "You are a human";
                 JOptionPane.showMessageDialog(null,answr);//made msgbox
                 this.setVisible(false);

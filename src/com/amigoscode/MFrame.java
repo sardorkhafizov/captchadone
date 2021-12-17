@@ -6,7 +6,6 @@ import java.awt.event.ActionListener;
 public class MFrame extends JFrame implements ActionListener {
     //adding components
     JCheckBox checkBox = new JCheckBox();
-    ImageIcon title;
     JButton btn;
     JLabel name;
     JLabel surename;
@@ -20,9 +19,8 @@ public class MFrame extends JFrame implements ActionListener {
     MFrame(){
 
 //creating frame
-        title = new ImageIcon("C:\\Users\\intel\\OneDrive\\Рабочий стол\\unnamed.jpg");
         this.setSize(300,400);
-        ImageIcon image = new ImageIcon("C:\\Users\\intel\\OneDrive\\Рабочий стол\\unnamed.jpg");
+        ImageIcon image = new ImageIcon("tmci.jpg");
         this.setIconImage(image.getImage());
         this.setTitle("log in");
         this.setLayout(null);
