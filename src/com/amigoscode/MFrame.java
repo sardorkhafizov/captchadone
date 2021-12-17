@@ -26,7 +26,7 @@ public class MFrame extends JFrame implements ActionListener {
         this.setLayout(null);
         this.setDefaultCloseOperation(this.EXIT_ON_CLOSE); //exit out of app
 
-//adding and creating labels and makking them looking goooood
+//adding and creating labels and makking them looking gooooood
         name = new JLabel("Name");
         name.setBounds(20, 40, 80, 30);
         add(name);
